@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Cargar producto</title>
+    </head>
+    <body>
+        <header class="encabezado-general">
+            <h2>Cargar producto</h2>
+            <input type="submit" class="boton-salida" value="salir" onclick="window.location.href='dashboard.html'">
+        </header>
+        <main>
+            <div class="cargar-producto">
+            <label>Seleccionar archivo:</label>
+            <input type="text">
+            <button>
+                <img src="images/subir.png" class="boton-subir">
+                subir
+            </button>
+            <button>
+                <img src="images/proceso.png" class="boton-subir">
+                procesar
+            </button>
+            </div>
+            <hr>
+            <div class="descargar-resultados">
+                <h2>resultados</h2>
+                <button>
+                <img src="images/excel.png" class="boton-subir">
+                Descargar plantilla
+            </button>
+        </div>
+        <div class="linea-tabla">
+            <table class="tabla">
+                <tr>
+                    <th>No. fila</th>
+                    <th>codigo</th>
+                    <th>Mensaje</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
