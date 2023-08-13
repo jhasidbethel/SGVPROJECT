@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Salidas</title>
+  </head>
+  <body>
+    <header class="encabezado-general">
+      <h2>Salidas</h2>
+      <input type="submit" class="boton-salida" value="salir" onclick="window.location.href='dashboard.html'">
+    </header>
+    <main>
+      <div class="inputs-entradas">
+        <label>Numero documento :</label>
+        <input type="text">
+        <button>
+          <img src="images/buscar.png" alt="boton-buscar">
+          buscar
+        </button>
+        <button>
+          <img src="images/goma-de-borrar.png" alt="boton-limpiar">
+          limpiar
+        </button>
+        <hr>
+      </div>
+      <div>
+        <label>Fecha :</label>
+        <input type="date">
+        <label>Usuario :</label>
+        <input type="text"><br>
+
+        <label>Documento cliente :</label>
+        <input type="text">
+        <label>Nombre cliente :</label>
+        <input type="text">
+        <hr>
+      </div>
+      <div class="linea-tabla">
+        <table class="tabla">
+          <tr>
+            <th>codigo producto</th>
+            <th>descripcion</th>
+            <th>categoria</th>
+            <th>almacen</th>
+            <th>cantidad</th>
+            <th>precio compra</th>
+            <th>precio venta</th>
+            <th>subtotal</th>
+            <th>total</th>
+          </tr>
+        </table>
+      </div>
+      <div class="inputs-pdf">
+        <h3>total :000</h3>
+        <button>
+          <img src="images/marca-x.png">
+          cancelar salida
+        </button>
+        <button>
+          <img src="images/descargar-pdf.png">
+          descargar PDF
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

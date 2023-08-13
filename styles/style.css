@@ -1,0 +1,489 @@
+/*selector universal*/
+* { 
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*encabezado sesion*/
+.encabezado-inicio {
+    background-color: rgb(35, 92, 238, 1);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: medium;
+}
+
+/*contenido principal */
+.contenido-principal, 
+#boton-ingreso,
+#boton-salir {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 2px;
+}
+
+#boton-ingreso:hover {
+  background-color: rgb(97, 95, 95);
+}
+
+#boton-salir:hover {
+  background-color: rgb(97, 95, 95);
+}
+
+#link-login:active {
+  background-color: rgb(35, 92, 238, 1);
+  
+}
+
+#logo-login {
+    width: 29%;
+}
+
+.input-text {
+    margin-top: 3px;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding: 1px;
+
+}
+
+/* estilos formulario sesion*/
+#boton-ingreso, #boton-salir {
+    color: white;
+    background-color: rgb(35, 92, 238, 1);
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1px;
+    padding: 2px;
+}
+
+
+.pie-pagina {
+    background-color: rgb(35, 92, 238, 1);
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0
+      
+}
+
+/* estilos de forgout */
+
+.recuperacion {
+  display:block;
+  text-align: center;
+  justify-content: space-between;
+  border: 2px solid rgb(35, 92, 238, 1);
+  border-radius: 3px;
+  margin-top: 10%;
+  width: 40%;
+  height: 350%;
+ 
+}
+
+#titulo-forgout, #label-forgout {
+  color:  rgb(35, 92, 238, 1);
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px ;
+}
+
+.form-recuperacion form{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: larger;
+}
+
+.input-style {
+  border: 2px solid rgb(35, 92, 238, 1);
+  border-radius: 6px;
+  width: 30%;
+  height: 100%;
+  
+}
+
+#input-email {
+  margin: 12px;
+  border-radius: 11px;
+  font-size: medium;
+  padding: 3px;
+}
+
+#link-regreso {
+  margin-top:10px;
+  text-decoration: rgb(255, 255, 255);
+  width: 20%;
+}
+
+#texto-forgout {
+  font-size:medium;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #363636;
+  text-shadow: 5px;
+  
+}
+
+
+
+/* estilos dashboard */
+
+/* Estilos para el encabezado */
+.encabezado-dashboard {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(35, 92, 238, 1);
+    padding: 1px;
+  }
+  
+  .logo-sistema {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  
+  #nombre-sistema {
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  
+  .boton-salida {
+    background-color: rgb(35, 92, 238, 1);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+  }
+
+  .boton-salida:hover {
+    background-color: #363636;
+  }
+  
+  /* Estilos para el menú de navegación */
+  .menu {
+    background-color: rgb(35, 92, 238, 1);
+    color: white;
+    width: 10%;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .menu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .menu p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .menu:hover {
+    background-color:  rgb(228, 228, 229);
+  }
+  
+  .boton-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .boton-nav li {
+    margin-bottom: 5px;
+  }
+  
+  .boton-nav li a {
+    display: block;
+    padding: 8px 10px;
+    background-color: rgb(35, 92, 238, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  #nombre-rol:hover {
+    background-color: rgb(35, 92, 238, 1);
+  }
+  
+  
+  
+  /* estilos contenido principal de cajas dashboard */
+
+  #mensaje-bienvenida {
+    margin-left: 150px;
+    margin-top: 10px; 
+  }
+
+  
+
+  .contenedor-principal {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  .boxes {
+    background-color: rgb(228, 228, 229);
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 40%;
+    margin-left: 60px;
+    cursor: pointer;
+    
+  }
+
+  .boxes img {
+    width: 40%;  
+  }
+
+  .boxes:hover {
+    background-color: rgb(35, 92, 238, 1);
+  }
+
+  /* estilos de productos */
+
+  .encabezado-general {
+    background-color:  rgb(35, 92, 238, 1);
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    padding: 0 0 2px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;    
+  }
+  
+  .encabezado-general h2 {
+    margin-left: 0;
+  }
+  
+  .encabezado-general input {
+    margin-right: 0;
+  }
+
+  .detalles-producto {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inputs-productos {
+    margin-left: 30px;
+  }
+
+  .botones-consulta button{
+    margin-top: 5px;
+  }
+
+  .botones-consulta  img{
+    width: 20px;
+  }
+
+  .linea {
+    border-left: 10px solid  rgb(35, 92, 238, 1);
+    height: 630px;
+    margin-right: 1130px;
+  }
+
+  .lista-producto {
+    display: block;
+    align-items:center;
+    position:absolute;
+    margin-left: 250px;
+  }
+
+  .botones-busqueda {
+    margin: 15px;
+    margin-left: 55px;
+  }
+
+  .lista-producto img {
+    width: 12px;
+  }
+
+  .tabla  {
+    border: 2px solid rgb(35, 92, 238, 1) ;
+    border-collapse: collapse;
+    color: white;
+    background-color: rgb(35, 92, 238, 1);
+    width: 100%;
+  }
+
+  .linea-tabla {
+    border: 3px solid rgb(255, 255, 255);
+    padding-bottom: 300px;
+    background-color: rgb(221, 221, 221);
+  }
+
+  th td {
+    background-color: grey;
+    border: 2px solid black;
+  }
+
+  /* estilos cargar productos */
+
+  .cargar-producto {
+    display: flex;
+    flex-direction:row;
+  }
+
+  .descargar-resultados {
+    display: inline-flex;
+    justify-content:space-around;
+  }
+
+
+
+  .boton-subir {
+    width: 13px;
+  }
+
+
+  /* estilos de inventario */
+
+  .inputs-inventario img {
+    width: 10px;
+  }
+
+  .inputs-excel {
+    margin-top: 10px;
+    margin: 5px;
+  }
+
+  .inputs-excel img {
+    width: 10px;
+  }
+
+  /* estilos entradas */
+
+  .inputs-entradas img{
+    width: 10px;
+  }
+
+  .inputs-pdf img{
+    width: 10px;
+  }
+
+  .inputs-pdf {
+    display: flex;
+    align-content: space-between;
+  }
+
+  /*estilos graficos */
+
+  .inputs-graficos img{
+    width: 11px;
+  }
+
+  /* estilos ajustes */
+
+  .ajustes {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin: 20px;
+  }
+
+  .acceso-ajustes {
+    margin-bottom: 30px;
+  }
+
+/* Estilos para la pestaña de opción múltiple */
+.option-tab {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  border: 3px solid;
+  padding: 10px;
+  background-color: rgb(228, 228, 229);
+  text-align: center;
+  
+}
+.option-tab img {
+  border: 2px solid;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* estilos de permisos */
+
+.opciones {
+  display: inline-block;
+  margin-left: 5px;
+  width: 40%;
+}
+
+.ajustar {
+  display: inline-block;
+  margin-right: 5px;
+  width: 40%;
+}
+
+.opciones img {
+  width: 10px;
+}
+
+
+/* estilos de otros */
+
+.marco {
+  border: 2px solid;
+  height: 200px;
+  width: 160px;
+  
+  
+}
+
+.boton-guardar{
+  width: 20px;
+  text-align: center;
+  
+
+}
+
+#titulo-otros {
+  text-align:center;
+}
+
+.perfil-empresa {
+  display: flex;
+  align-items: baseline;
+  flex-direction:column;
+
+}
+
+
+
+
+
+
