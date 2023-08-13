@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div class="encabezado-dashboard">
+        <a href="login.html"><img src="images/logo.png" alt="logo-dashboard" class="logo-sistema"></a>
+        <h2 id="nombre-sistema">Sistema chuzo boutique</h2>
+        <input type="submit" value="salir" class="boton-salida" onclick="window.location.href='login.html'">
+      </div>
+    </header>
+
+    <nav>
+      <div class="menu">
+        <img src="images/usuario.jpg" alt="imagen de usuario" id="imagen-usuario">
+        <p id="nombre-rol">Administrador</p>
+        <hr>
+        <ul class="boton-nav">
+          <li><a href="login.html">Inicio</a></li>
+          <li><a href="producto.html">Productos</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="entrada.html">Entradas</a></li>
+           <li><a href="salida.html">Salidas</a></li>
+           <li><a href="proveedores.html">Proveedores</a></li>
+           <li><a href="clientes.html">Clientes</a></li>
+           <li><a href="grafico.html">Graficos</a></li>
+           <li><a onclick="showOptionTab()">Ajustes</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <h3 id="mensaje-bienvenida">Bienvenido Administrador</h3>
+        <div class="contenedor-principal">
+          <div id="product-box" class="boxes">
+            <a href="producto.html" ><img src="images/paquete.png" alt="logo-producto"></a>
+            <p>Productos</p>
+          </div>
+          <div id="inventory-box" class="boxes">
+            <a href="inventario.html"><img src="images/inventario.png" alt="logo-inventario"></a>
+            <p>Inventario</p>
+          </div>
+          
+          <div id="entradas-Box" class="boxes">
+            <a href="entrada.html"><img src="images/carretilla.png" alt="logo-entrada"></a>
+            <p>Entradas</p>
+          </div>
+          <div id="salidas-box" class="boxes">
+            <a href="salida.html"><img src="images/salida (1).png" alt="logo-salida"></a>
+            <p>Salidas</p>
+          </div>
+          <div id="clientes-box" class="boxes">
+            <a href="clientes.html"><img src="images/cliente.png" alt="logo-cliente"></a>
+            <p>Clientes</p>
+          </div>
+          <div id="proveedores-box" class="boxes">
+            <a href="proveedores.html"><img src="images/mensajero.png" alt="logo-proveedor"></a>
+            <p>Proveedores</p>
+          </div>
+          <div id="graficos-box" class="boxes">
+            <a href="grafico.html"><img src="images/tendencia.png" alt="logo-grafico"></a>
+            <p>Graficos</p>
+          </div>
+          <div id="ajustes-box" class="boxes">
+            <img src="images/rueda-dentada.png" alt="logo-ajuste" onclick="showOptionTab()">
+            <p>Ajustes</p>
+          </div>
+          
+          <div class="option-tab" id="option-tab">
+            <img src="images/usuario.png" onclick="goToFile('usuario.html')">
+            <p>Usuarios</p>
+            <img src="images/cerrar-con-llave.png" onclick="goToFile('permisos.html')">
+            <p>Permisos</p>
+            <img src="images/informe.png" onclick="goToFile('otros.html')">
+            <p>Otros</p>
+          </div>
+        </div>
+      </main>
+      <script src="js/pestañas.js"></script>
+    </body>
+    </html>
+      
