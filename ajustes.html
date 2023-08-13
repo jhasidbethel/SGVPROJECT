@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Ajustes</title>
+  </head>
+  <body>
+    <header class="encabezado-general">
+      <h2>Ajustes</h2>
+      <input type="submit" value="salir" class="boton-salida" onclick="window.location.href='dashboard.html'">
+    </header>
+    <main class="ajustes">
+      <div class="acceso-ajustes">
+        <h2>Ajustes</h2>
+        <h3>Perfil</h3>
+        <p><label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" value="Juan Pérez">
+        </p>
+        <p>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" value="López">
+        </p>
+        <p><label for="correo">Correo electrónico:</label>
+          <input type="email" name="correo" id="correo" value="juan.perez@example.com">
+        </p>
+        <p><input type="submit" value="Guardar"></p>
+        
+        <h2>Políticas</h2>
+        <p><a href="politicas.html">Políticas de privacidad</a></p>
+        <h2>Versión del sistema</h2>
+        <p>Versión del sistema: 1.0.0</p>
+        <h2>Permisos</h2>
+        <p>
+          <input type="checkbox" name="permiso1"> Permiso 1
+          <input type="checkbox" name="permiso2"> Permiso 2
+          <input type="checkbox" name="permiso3"> Permiso 3
+        </p>
+        <p><input type="submit" value="Guardar"></p>
+      </div>
+    </main>
+  </body>
+</html>
