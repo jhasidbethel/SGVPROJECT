@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Graficos</title>
+  </head>
+  <body>
+    <header class="encabezado-general">
+      <h2>Graficos</h2>
+      <input type="submit" class="boton-salida" value="salir" onclick="window.location.href='dashboard.html'">
+    </header>
+    <main>
+      <div class="inputs-graficos">
+        <label>Seleccionar grafico :</label>
+        <select>
+          <option>entrada</option>
+          <option>salida</option>
+          <option>productos</option>
+          <option>inventario</option>
+        </select>
+        <button>
+          <img src="images/ojo.png">
+          Buscar
+        </button>
+        <hr>
+      </div>
+
+      <div class="grafico-barra">
+        <canvas id="myChart"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document.getElementById('myChart');
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio'],
+              datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+      </div>
+    </main>
+  </body>
+</html>
