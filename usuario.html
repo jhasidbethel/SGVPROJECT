@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="viewport">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Usuarios</title>
+    </head>
+    <body>
+        <header class="encabezado-general">
+            <h2>Usuarios</h2>
+            <input type="submit" value="salir" class="boton-salida" onclick="window.location.href='dashboard.html'">   
+        </header>
+
+        <main class="detalles-producto">
+            <div class="inputs-productos">
+                <h3>Detalles producto</h3>
+                <label>Nombre completo : </label><br>
+                <input type="text"><br>
+                <label>Usuario :</label><br>
+                <input type="text"><br>
+                <label>Rol :</label><br>
+                <select>
+                    <option>Administrador</option>
+                    <option>Usuario</option>
+                </select><br>
+                <label>Contraseña :</label><br>
+                <input type="password" required><br>
+                <label>Confirmar Contraseña :</label><br>
+                <input type="password" required><br>
+                
+                <div class="botones-consulta">
+                    <button>
+                        <img src="images/guardar-el-archivo.png" alt="imagen-guardar">
+                        Guardar
+                    </button><br>
+                    <button>
+                        <img src="images/eliminar.png" alt="imagen-eliminar">
+                        Eliminar
+                    </button><br>
+                    <button>
+                        <img src="images/goma-de-borrar.png" alt="imagen-limpiar">
+                        Limpiar
+                    </button>
+                </div>
+            </div><div class="linea"></div>
+            
+            <div class="lista-producto">
+                <h3>Lista de usuarios</h3>
+                <div class="botones-busqueda">
+                    <label>Buscar por :</label>
+                    <select>
+                        <option>Nombre completo</option>
+                        <option>Usuario</option>
+                        <option>Rol</option>
+                    </select>
+                    <input type="text">
+                    <button>
+                        <img src="images/buscar.png" alt="logo-buscar">
+                    </button>
+                    <button>
+                        <img src="images/goma-de-borrar.png" alt="logo-borrar">
+                    </button>
+                </div>
+                <div class="linea-tabla">
+                    <table class="tabla">
+                        <tr>
+                            <th>Nombre completo</th>
+                            <th>Usuario</th>
+                            <th>Rol</th>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        </body>
+        </html>
