@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Crear una tabla con encabezados -->
+<table id="tabla-productos">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Las filas de la tabla se agregarán aquí dinámicamente -->
+    </tbody>
+  </table>
+  
+  <!-- Crear un formulario para agregar productos -->
+  <form id="formulario-productos">
+    <input type="text" placeholder="Nombre" id="nombre-producto">
+    <input type="number" placeholder="Precio" id="precio-producto">
+    <input type="number" placeholder="Cantidad" id="cantidad-producto">
+    <button type="submit">Agregar producto</button>
+  </form>
+  
+  <script>
+    // Obtener referencias a los elementos del formulario
+    const form = document.querySelector('#formulario-productos');
+    const nombreInput = document.querySelector('#nombre-producto');
+    const precioInput = document.querySelector('#precio-producto');
+    const cantidadInput = document.querySelector('#cantidad-producto');
+    
+    // Obtener referencia al cuerpo de la tabla
+    const tbody = document.querySelector('#tabla-productos tbody');
+    
+    // Agregar un evento de "submit" al formulario
+    form.addEventListener('submit', agregarProducto);
+    
+    function agregarProducto(event) {
+      event.preventDefault();
+      
+      // Obtener los valores del formulario
+      const nombre = nombreInput.value;
+      const precio = precioInput.value;
+      const cantidad = cantidadInput.value;
+      
+      // Crear una nueva fila en la tabla
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${nombre}</td>
+        <td>${precio}</td>
+        <td>${cantidad}</td>
+      `;
+      
+      // Agregar la fila a la tabla
+      tbody.appendChild(tr);
+      
+      // Limpiar el formulario
+      form.reset();
+    }
+  </script>
+  
+  
+</body>
+</html>

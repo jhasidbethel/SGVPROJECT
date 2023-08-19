@@ -2,8 +2,7 @@
 * { 
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 /*encabezado sesion*/
@@ -34,7 +33,6 @@
 
 #link-login:active {
   background-color: rgb(35, 92, 238, 1);
-  
 }
 
 #logo-login {
@@ -48,10 +46,10 @@
     height: 50%;
     display: flex;
     padding: 1px;
-
 }
 
 /* estilos formulario sesion*/
+
 #boton-ingreso, #boton-salir {
     color: white;
     background-color: rgb(35, 92, 238, 1);
@@ -60,7 +58,6 @@
     margin-top: 1px;
     padding: 2px;
 }
-
 
 .pie-pagina {
     background-color: rgb(35, 92, 238, 1);
@@ -72,8 +69,7 @@
     padding: 5px;
     width: 100%;
     position: fixed;
-    bottom: 0
-      
+    bottom: 0    
 }
 
 /* estilos de forgout */
@@ -87,7 +83,6 @@
   margin-top: 10%;
   width: 40%;
   height: 350%;
- 
 }
 
 #titulo-forgout, #label-forgout {
@@ -102,6 +97,7 @@
   margin-top: 5px;
   margin-right: 20px;
   font-size: larger;
+  border-radius: 20px;
 }
 
 .input-style {
@@ -109,7 +105,6 @@
   border-radius: 6px;
   width: 30%;
   height: 100%;
-  
 }
 
 #input-email {
@@ -117,25 +112,45 @@
   border-radius: 11px;
   font-size: medium;
   padding: 3px;
+  height: 35px;
 }
 
 #link-regreso {
   margin-top:10px;
   text-decoration: rgb(255, 255, 255);
   width: 20%;
+  height: 2%;
 }
 
 #texto-forgout {
   font-size:medium;
   margin: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #363636;
   text-shadow: 5px;
-  
 }
 
+.color-forgout {
+  background-color: rgb(35, 92, 238, 1);
+}
 
+.piepagina-forgout {
+  background-color: rgb(255, 255, 255);
+  color: rgb(35, 92, 238, 1);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0 ;
+  border: 2px solid rgb(35, 92, 238, 1);   
+}
 
+.text-pie {
+  font-weight: 30px;
+}
 /* estilos dashboard */
 
 /* Estilos para el encabezado */
@@ -152,6 +167,10 @@
     width: 50px;
     height: auto;
     cursor: pointer;
+  }
+
+  .logo-sistema:hover {
+    background-color: rgb(35, 92, 238, 1);
   }
 
   
@@ -198,10 +217,6 @@
     font-size: 18px;
     margin-bottom: 15px;
   }
-
-  .menu:hover {
-    background-color:  rgb(228, 228, 229);
-  }
   
   .boton-nav {
     list-style: none;
@@ -226,9 +241,11 @@
   #nombre-rol:hover {
     background-color: rgb(35, 92, 238, 1);
   }
-  
-  
-  
+
+  .nav-estilos:hover {
+    background-color: #363636;
+  }
+
   /* estilos contenido principal de cajas dashboard */
 
   #mensaje-bienvenida {
@@ -236,15 +253,12 @@
     margin-top: 10px; 
   }
 
-  
-
   .contenedor-principal {
     display: flex;
     align-items: center;
     justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
-    
   }
 
   .boxes {
@@ -257,8 +271,7 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 40%;
     margin-left: 60px;
-    cursor: pointer;
-    
+    cursor: pointer; 
   }
 
   .boxes img {
@@ -361,12 +374,9 @@
     justify-content:space-around;
   }
 
-
-
   .boton-subir {
     width: 13px;
   }
-
 
   /* estilos de inventario */
 
@@ -398,6 +408,12 @@
     align-content: space-between;
   }
 
+  .boton-estilos:hover {
+    background-color: rgb(35, 92, 238, 1);
+    border-color: gainsboro;
+    cursor: pointer;
+  }
+
   /*estilos graficos */
 
   .inputs-graficos img{
@@ -418,6 +434,7 @@
   }
 
 /* Estilos para la pestaña de opción múltiple */
+
 .option-tab {
   display: none;
   position: absolute;
@@ -426,8 +443,8 @@
   padding: 10px;
   background-color: rgb(228, 228, 229);
   text-align: center;
-  
 }
+
 .option-tab img {
   border: 2px solid;
   width: 50px;
@@ -453,22 +470,17 @@
   width: 10px;
 }
 
-
 /* estilos de otros */
 
 .marco {
   border: 2px solid;
   height: 200px;
   width: 160px;
-  
-  
 }
 
 .boton-guardar{
   width: 20px;
   text-align: center;
-  
-
 }
 
 #titulo-otros {
@@ -479,7 +491,6 @@
   display: flex;
   align-items: baseline;
   flex-direction:column;
-
 }
 
 

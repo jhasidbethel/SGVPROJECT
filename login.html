@@ -19,13 +19,13 @@
       <div class="contenido-principal">
         <img src="images/logo.png" alt="imagen de empresa" id="logo-login">
         
-        <!--formulario de sesion-->
+       <!--formulario de sesion-->
         <form action="">
           <div class="form-inicio">
-            <input type="email" placeholder="correo electronico" required value="" class="input-text"><br>
-            <input type="password" placeholder="contraseña" required value="" class="input-text"><br>
+            <input type="email" placeholder="correo electronico" required id="correo" class="input-text"><br>
+            <input type="password" placeholder="contraseña" required id="contrasena" class="input-text"><br>
             <a href="forgout.html" id="link-inicio">¿olvido su contraseña?</a><br>
-            <input type="submit" value="ingresar" id="boton-ingreso" onclick="window.location.href='dashboard.html'"><br>
+            <input type="submit" value="ingresar" id="boton-ingreso"><br>
             <input type="reset" value="salir" id="boton-salir">
         
           </div>
@@ -37,5 +37,7 @@
   <footer class="pie-pagina">
     <p>Todos los derechos reservados 2023</p>
   </footer>
+  
+  <script src="js/validacion.js"></script>
 </body>
 </html>
