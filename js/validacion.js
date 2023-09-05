@@ -27,8 +27,23 @@ function validateForm(event) {
     return false;
   }
   
-  // Si todo está bien, redirigir al usuario a la página de inicio
+  
   window.location.href = 'dashboard.html';
+}
+
+// dashboard 
+
+function showOptionTab() {
+  let optionTab = document.getElementById("option-tab");
+  if (optionTab.style.display === "block") {
+     optionTab.style.display = "none";
+  } else {
+     optionTab.style.display = "block";
+  }
+}
+
+function goToFile(file) {
+ window.location.href = file;
 }
 
 
