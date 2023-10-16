@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inventario</title>
+  </head>
+  <body>
+    <header class="encabezado-general">
+      <h2>Inventario</h2>
+      <input type="submit" class="boton-salida" value="salir" onclick="window.location.href='dashboard.html'">
+    </header>
+    <main>
+      <div class="inputs-inventario">
+        <label>Fecha inicio :</label>
+        <input type="date">
+        <label>Fecha fin</label>
+        <input type="date">
+        <button class="boton-estilos">
+          <img src="images/buscar.png" alt="boton-buscar">
+        </button><br>
+      </div>
+      <div class="inputs-excel">
+        <button class="boton-estilos">
+          <img src="images/excel.png">
+          Descargar excel
+        </button>
+        <label>Buscar por :</label>
+        <select>
+          <option>codigo producto</option>
+          <option>descripcion</option>
+          <option>categoria</option>
+          <option>almacen</option>
+          <option>entradas</option>
+          <option>salidas</option>
+          <option>stock actual</option>
+          <option>total ingresos</option>
+          <option>total egresos</option>
+        </select>
+        <input type="text">
+        <button class="boton-estilos">
+          <img src="images/buscar.png" alt="boton-buscar">
+        </button>
+        <button class="boton-estilos">
+          <img src="images/goma-de-borrar.png">
+        </button>
+      </div>
+      <div class="linea-tabla">
+        <table class="tabla">
+          <tr>
+            <th>codigo producto</th>
+            <th>descripcion</th>
+            <th>categoria</th>
+            <th>almacen</th>
+            <th>entradas</th>
+            <th>salidas</th>
+            <th>stock actual</th>
+            <th>total ingresos</th>
+            <th>total egresos</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script src="js/validacion.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Proveedores</title>
+  </head>
+  <body>
+    <header class="encabezado-general">
+      <h2>Proveedores</h2>
+      <input type="submit" class="boton-salida" value="salir" onclick="window.location.href='dashboard.html'">
+    </header>
+    <main class="detalles-producto">
+      <div class="inputs-productos">
+        <h3>Detalles proveedor</h3>
+        <label>numero documento : </label><br>
+        <input type="text"><br>
+        <label>nombre completo :</label><br>
+        <input type="text"><br>
+        
+        <div class="botones-consulta">
+          <button class="boton-estilos">
+            <img src="images/guardar-el-archivo.png" alt="imagen-guardar">
+            Guardar
+          </button><br>
+          <button class="boton-estilos">
+            <img src="images/eliminar.png" alt="imagen-eliminar">
+            Eliminar
+          </button><br>
+           <button class="boton-estilos">
+            <img src="images/goma-de-borrar.png" alt="imagen-limpiar">
+            Limpiar
+          </button>
+        </div>
+      </div>
+      <div class="linea">
+
+      </div>
+      <div class="lista-producto">
+        <h3>Lista de Proveedores</h3>
+        <div class="botones-busqueda">
+          <label>Buscar por :</label>
+          <select>
+            <option>Numero documento</option>
+            <option>Nombre completo</option>
+          </select>
+          <input type="text">
+          <button class="boton-estilos">
+            <img src="images/buscar.png" alt="logo-buscar">
+          </button>
+          <button class="boton-estilos">
+            <img src="images/goma-de-borrar.png" alt="logo-borrar">
+          </button>
+        </div>
+        <div class="linea-tabla">
+          <table class="tabla">
+            <tr>
+              <th>Numero documento</th>
+              <th>Nombre completo</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+  </html>

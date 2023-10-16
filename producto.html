@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Productos</title>
+  </head>
+  <body>
+    <header class="encabezado-general">
+      <h2>Productos</h2>
+      <input type="submit" value="salir" class="boton-salida" onclick="window.location.href='dashboard.html'">
+    </header>
+    
+    <main class="detalles-producto">
+      
+      
+      
+      <div class="container">
+        
+        <h3>Detalles producto</h3>
+        
+
+        <div class="tab tab-2">
+          
+          Nombre :<input type="text" name="Nombre" id="Nombre">
+          Codigo :<input type="text" name="Codigo" id="Codigo">
+          Descripcion :<input type="text" name="Descripcion" id="Descripcion">
+          categoria : <input type="text" name="Categoria" id="Categoria">
+          Almacen : <input type="text" name="Almacen" id="Almacen">
+          <button class="btones" onclick="addHtmlTableRow();">Añadir producto</button><br>
+          <button class="btones" onclick="editHtmlTbleSelectedRow();">Editar producto</button><br>
+          <button class="btones" onclick="removeSelectedRow();">Eliminar producto</button>
+        </div>
+        </div>
+
+          <div class="tab tab-1">
+            <table id="table" border="1">
+              <tr>
+                <th>Nombre</th>
+                <th>Codigo</th>
+                <th>Descripcion</th>
+                <th>categoria</th>
+                <th>Almacen</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </main>
+        <footer class="pie-pagina">
+
+        </footer>
+        <script src="js/validacion.js"></script>  
+      </body>
+      </html>
+
